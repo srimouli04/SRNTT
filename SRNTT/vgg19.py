@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 from scipy.io import loadmat
 
-
+tf.compat.v1.disable_eager_execution()
 class VGG19(object):
     def __init__(self, input_image=None, model_path='models/VGG19/imagenet-vgg-verydeep-19.mat', final_layer='relu5_1'):
         if isinstance(input_image, np.ndarray):

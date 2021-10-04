@@ -18,8 +18,8 @@ parser = argparse.ArgumentParser(description='SRNTT')
 
 # init parameters
 parser.add_argument('--is_train', type=str2bool, default=False)
-parser.add_argument('--srntt_model_path', type=str, default='SRNTT/models/SRNTT')
-parser.add_argument('--vgg19_model_path', type=str, default='SRNTT/models/VGG19/imagenet-vgg-verydeep-19.mat')
+parser.add_argument('--srntt_model_path', type=str, default='/content/SRNTT/models/SRNTT')
+parser.add_argument('--vgg19_model_path', type=str, default='/content/SRNTT/models/VGG19/imagenet-vgg-verydeep-19.mat')
 parser.add_argument('--save_dir', type=str, default=None, help='dir of saving intermediate training results')
 parser.add_argument('--num_res_blocks', type=int, default=16, help='number of residual blocks')
 
